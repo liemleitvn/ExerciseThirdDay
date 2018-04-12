@@ -71,7 +71,7 @@ void calculateInterger()
 	printf("\nPlease input Number: ");
 	scanf_s("%d", &n);
 	//int Tong1 = tongSoNguyenBinhPhuong(n);
-	printf(" \Tong n so nguyen: %d", tongSoNguyenBinhPhuong(n));
+	printf(" \nTong n so nguyen: %d", tongSoNguyenBinhPhuong(n));
 	printf("\n So dao cua so vua nhap la: %d", reverseNumber(n));
 	printf("\n Tong binh phuong n so nguyen: %d", tongSoNguyenBinhPhuong(n));
 	printf("\nTong nghich dao n so nguyen: %d", tongNghichDaoSoNguyen(n));
