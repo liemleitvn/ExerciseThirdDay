@@ -79,6 +79,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="calculate.h" />
     <ClInclude Include="change_char.h" />
     <ClInclude Include="demso.h" />
     <ClInclude Include="demso2.h" />
