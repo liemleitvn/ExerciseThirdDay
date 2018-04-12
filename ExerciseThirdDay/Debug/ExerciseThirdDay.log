@@ -1,29 +1,11 @@
-﻿Build started 12/04/2018 17:32:56.
+﻿Build started 12/04/2018 23:13:32.
      1>Project "G:\LIEM\ExerciseThirdDay\ExerciseThirdDay\ExerciseThirdDay.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ExerciseThirdDay.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Program.cpp
-         Program.cpp
-     1>g:\liem\exercisethirdday\exercisethirdday\calculate.h(70): error C2601: 'oddNumber' : local function definitions are illegal
-                 g:\liem\exercisethirdday\exercisethirdday\calculate.h(57): this line contains a '{' which has not yet been matched
-     1>g:\liem\exercisethirdday\exercisethirdday\calculate.h(80): error C2601: 'sumPrime' : local function definitions are illegal
-                 g:\liem\exercisethirdday\exercisethirdday\calculate.h(57): this line contains a '{' which has not yet been matched
-     1>g:\liem\exercisethirdday\exercisethirdday\calculate.h(90): error C2601: 'tongSoNguyen' : local function definitions are illegal
-                 g:\liem\exercisethirdday\exercisethirdday\calculate.h(57): this line contains a '{' which has not yet been matched
-     1>g:\liem\exercisethirdday\exercisethirdday\calculate.h(99): error C2601: 'tongSoNguyenBinhPhuong' : local function definitions are illegal
-                 g:\liem\exercisethirdday\exercisethirdday\calculate.h(57): this line contains a '{' which has not yet been matched
-     1>g:\liem\exercisethirdday\exercisethirdday\calculate.h(109): error C2601: 'tongNghichDaoSoNguyen' : local function definitions are illegal
-                 g:\liem\exercisethirdday\exercisethirdday\calculate.h(57): this line contains a '{' which has not yet been matched
-     1>g:\liem\exercisethirdday\exercisethirdday\calculate.h(118): error C2601: 'tichSoNguyen' : local function definitions are illegal
-                 g:\liem\exercisethirdday\exercisethirdday\calculate.h(57): this line contains a '{' which has not yet been matched
-     1>g:\liem\exercisethirdday\exercisethirdday\calculate.h(128): error C2601: 'tongGiaiThuaSoNguyen' : local function definitions are illegal
-                 g:\liem\exercisethirdday\exercisethirdday\calculate.h(57): this line contains a '{' which has not yet been matched
-     1>g:\liem\exercisethirdday\exercisethirdday\calculate.h(140): error C2601: 'calculateInterger' : local function definitions are illegal
-                 g:\liem\exercisethirdday\exercisethirdday\calculate.h(57): this line contains a '{' which has not yet been matched
-     1>g:\liem\exercisethirdday\exercisethirdday\program.cpp(10): error C2601: 'main' : local function definitions are illegal
-                 g:\liem\exercisethirdday\exercisethirdday\calculate.h(57): this line contains a '{' which has not yet been matched
-     1>g:\liem\exercisethirdday\exercisethirdday\program.cpp(18): fatal error C1075: end of file found before the left brace '{' at 'g:\liem\exercisethirdday\exercisethirdday\calculate.h(57)' was matched
-     1>Done Building Project "G:\LIEM\ExerciseThirdDay\ExerciseThirdDay\ExerciseThirdDay.vcxproj" (Build target(s)) -- FAILED.
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\LIEM\ExerciseThirdDay\Debug\ExerciseThirdDay.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"G:\LIEM\ExerciseThirdDay\Debug\ExerciseThirdDay.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\LIEM\ExerciseThirdDay\Debug\ExerciseThirdDay.lib" /MACHINE:X86 Debug\Program.obj
+         Debug\stdafx.obj
+         ExerciseThirdDay.vcxproj -> G:\LIEM\ExerciseThirdDay\Debug\ExerciseThirdDay.exe
+     1>Done Building Project "G:\LIEM\ExerciseThirdDay\ExerciseThirdDay\ExerciseThirdDay.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:00.28
+Time Elapsed 00:00:00.46

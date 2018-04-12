@@ -63,6 +63,7 @@ int checkPrimeNumber(int number)//kiem tra co phai so nguyen to khong
 			return 0;
 			break;
 		}
+	}
 	return number;
 }
 //Ham tinh tong so le
@@ -81,7 +82,7 @@ int sumPrime(int n)
 	int S = 3;
 	for (int i = 2; i <= n; i++)
 	{
-		S = S + checkNumber(i);
+		S = S + checkPrimeNumber(i);
 	}
 	
 	return S;
