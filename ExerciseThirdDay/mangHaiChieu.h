@@ -14,10 +14,10 @@ void inputTwoDimensionalArrayRandom(int a[][10], int m, int n)
 	for (int i = 0; i < m; i++)
 	{
 		for (int j = 0; j < n; j++)
-		{	
-			a[i][j]= rand() % 50;
+		{
+			a[i][j] = rand() % 90+9;
 		}
-		printf("\n");
+		//printf("\n");
 	}
 }
 
@@ -37,7 +37,7 @@ void inputTwoDimensionalArrayRandom(int a[][10], int m, int n)
 //}
 void outputTwoDimensionalArray(int a[][10], int m, int n)
 {
-	printf("TwoDimensionalArray just input: \n");
+	printf("Two Dimensional Array just input: \n");
 	for (int i = 0; i < m; i++)
 	{
 		for (int j = 0; j < n; j++)
@@ -47,6 +47,7 @@ void outputTwoDimensionalArray(int a[][10], int m, int n)
 		printf("\n");
 	}
 }
+//Ham tinh tong so le
 int sumOddNumberArray(int a[][10], int m, int n)
 {
 	int sum = 0;
@@ -62,8 +63,88 @@ int sumOddNumberArray(int a[][10], int m, int n)
 	}
 	return sum;
 }
+//Ham tinh tong so chan
+int sumEvenNumber(int a[][10],int m, int n)
+{
+	int sum = 0;
+	for (int i = 0; i < m; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			if (a[i][j] % 2 == 0)
+			{
+				sum = sum + a[i][j];
+			}
+		}
+	}
+	return sum;
+}
 
-void twoDimensionalArry()
+//Tinh tong duong cheo chinh
+int sumMainDiagonal(int a[][10], int m, int n)
+{
+	int sum = 0;
+	for (int i = 0; i < m; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			if (i == j)
+			{
+				sum = sum + a[i][j];
+			}
+		}
+	}
+	return sum;
+}
+int sumAuxiliaryDiagonal(int a[][10], int m, int n)
+{
+	int sum = 0;
+	for (int i = 0; i < m; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			if (m-1 == i + j)
+			{
+				sum = sum + a[i][j];
+			}
+		}
+	}
+	return sum;
+}
+int sumRows(int a[][10], int n,int i )
+{
+	int sum = 0;
+	for (int j = 0; j < n; j++)
+	{
+		sum = sum + a[i][j];
+	}
+	return sum;
+}
+void outputSumRows(int a[][10], int n)
+{
+	for (int i = 0; i < n; i++)
+	{
+		printf("\nSum Row %d:  %d", i + 1, sumRows(a,n,i));
+	}
+	printf("\n");
+}
+int sumColums(int a[][10], int m, int j)
+{
+	int sum = 0;
+	for (int i = 0; i < m; i++)
+	{
+		sum = sum + a[i][j];
+	}
+	return sum;
+}
+void outputSumColums(int a [][10], int m)
+{
+	for (int j = 0; j < m; j++)
+	{
+		printf("\nSum Colum %d: %d", j + 1,sumColums(a,m,j));
+	}
+}
+void twoDimensionalArray()//Mang 2 chieu
 {
 	int a[10][10];
 	int m, n;
@@ -72,8 +153,18 @@ void twoDimensionalArry()
 	scanf_s("%d", &m);
 	printf("Intput colums: ");
 	scanf_s("%d", &n);
+	printf("\n");
 	inputTwoDimensionalArrayRandom(a, m, n);
 	//inputTwoDimensionalArray(a, m, n);
 	outputTwoDimensionalArray(a, m, n);
 	printf("\nSum Odd Number Array: %d", sumOddNumberArray(a, m, n));
+	printf("\nSum Even Number Array: %d", sumEvenNumber(a, m, n));
+	if (m == n)
+	{
+		printf("\nSum Main Diagonal Array: %d", sumMainDiagonal(a, m, n));
+		printf("\nSum auxiliary Diagonal Array: %d", sumAuxiliaryDiagonal(a, m, n));
+	}
+	printf("\n");
+	outputSumRows(a,n);
+	outputSumColums(a, m);
 }

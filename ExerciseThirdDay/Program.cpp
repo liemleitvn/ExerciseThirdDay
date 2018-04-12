@@ -19,7 +19,7 @@ void main()
 	// testnumber();
 	//quadraticEquationTwo();
 	//calculateInterger();
-	twoDimensionalArry();
+	twoDimensionalArray();
 	_getch();
 
 
